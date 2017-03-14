@@ -22,7 +22,15 @@ public class Dice {
 	}
 
 	//write a method to determine if two Dice objects are equals
+	public int same(Dice d2) {
+		if (this.spots == d2.spots) {
+			return this.spots;
+		} else {
+			return 0;
+		}
+	}
 	
-	//write a method that prints a Die
-
+	public void printDie() {
+		System.out.println(this.spots);
+	}
 }
